@@ -22,6 +22,7 @@ class App extends Component {
     const filteredCartoons = cartoons.filter(cartoon => cartoon.name.toLowerCase().includes(searchField.toLowerCase()))
     return (
       <div className="App">
+        <h1> Cartoons Photodeck</h1>
         <SearchField
         placeholder='search cartoons'
         handleChange={(e) => this.setState({ searchField: e.target.value })}
